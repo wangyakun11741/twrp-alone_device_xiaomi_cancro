@@ -1,0 +1,631 @@
+__bionic_open_tzdata: couldn't find any tzdata when looking for localtime!
+__bionic_open_tzdata: couldn't find any tzdata when looking for GMT!
+__bionic_open_tzdata: couldn't find any tzdata when looking for posixrules!
+Starting TWRP 3.0.2-0 on Wed Dec 20 02:30:20 2017
+ (pid 188)
+I:=> product model: 'MI 3W'
+I:=> using device id: 'MI_3W'
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
+TW_INCLUDE_CRYPTO := true
+I:Found brightness file at '/sys/class/leds/lcd-backlight/brightness'
+I:Got max brightness 255 from '/sys/class/leds/lcd-backlight/max_brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:LANG: en
+Starting the UI...Overlay graphics may work (mdssfb_80000), but not enabled. Use TW_TARGET_USES_QCOM_BSP := true to enable.
+setting DRM_FORMAT_RGBX8888 and GGL_PIXEL_FORMAT_RGBX_8888
+Skipping drm graphics -- not present in build tree
+fb0 reports (possibly inaccurate):
+  vi.bits_per_pixel = 32
+  vi.red.offset   =  24   .length =   8
+  vi.green.offset =  16   .length =   8
+  vi.blue.offset  =   8   .length =   8
+setting GGL_PIXEL_FORMAT_RGBX_8888
+double buffered
+framebuffer: 0 (1080 x 1920)
+Using fbdev graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+=> Linking mtab
+Renaming regular /etc/recovery.fstab -> /etc/recovery.fstab.bak
+Moving /etc/twrp.fstab -> /etc/recovery.fstab
+=> Processing recovery.fstab
+I:Processing '/aboot'
+I:Processing '/boot'
+I:Processing '/cache'
+I:Processing '/data'
+I:Setting up '/data' as data/media emulated storage.
+I:Created '/sdcard' folder.
+I:mount -o bind '/data/media' '/sdcard' process ended with RC=0
+I:mount -o bind '/data/media/0' '/sdcard' process ended with RC=0
+I:mount -o bind '/data/media/0' '/sdcard' process ended with RC=0
+I:Processing '/dbi'
+I:Processing '/misc'
+I:Processing '/modem'
+I:Processing '/recovery'
+I:Processing '/rpm'
+I:Processing '/sbl1'
+I:Processing '/system'
+I:Processing '/tz'
+I:Processing '/usbotg'
+I:Created '/usbotg' folder.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/MI_3W'
+I:Settings storage is '/data/media/0'
+I:Decrypt adopted storage starting
+I:PageManager::LoadFileToBuffer loading filename: '/data/system/storage.xml' directly
+Updating partition details...
+I:Data backup size is 247MB, free: 8443MB.
+I:Unable to mount '/usbotg'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Unmounting main partitions...
+
+
+Partition Logs:
+/aboot | /dev/block/mmcblk0p7 | Size: 4MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p7
+   Display_Name: aboot
+   Storage_Name: aboot
+   Backup_Path: /aboot
+   Backup_Name: aboot
+   Backup_Display_Name: aboot
+   Storage_Path: /aboot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/boot | /dev/block/mmcblk0p19 | Size: 32MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p19
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/cache | /dev/block/mmcblk0p24 | Size: 377MB Used: 8MB Free: 369MB Backup Size: 8MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p24
+   Display_Name: Cache
+   Storage_Name: Cache
+   Backup_Path: /cache
+   Backup_Name: cache
+   Backup_Display_Name: Cache
+   Storage_Path: /cache
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/data | /dev/block/mmcblk0p25 | Size: 12744MB Used: 247MB Free: 8443MB Backup Size: 247MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media/0
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p25
+   Length: -16384
+   Display_Name: Data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media/0
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   MTP_Storage_ID: 65537
+
+/dbi | /dev/block/mmcblk0p6 | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p6
+   Display_Name: dbi
+   Storage_Name: dbi
+   Backup_Path: /dbi
+   Backup_Name: dbi
+   Backup_Display_Name: dbi
+   Storage_Path: /dbi
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/misc | /dev/block/mmcblk0p9 | Size: 4MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p9
+   Display_Name: misc
+   Storage_Name: misc
+   Backup_Path: /misc
+   Backup_Name: misc
+   Backup_Display_Name: misc
+   Storage_Path: /misc
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/modem | /dev/block/mmcblk0p22 | Size: 128MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p22
+   Display_Name: modem
+   Storage_Name: modem
+   Backup_Path: /modem
+   Backup_Name: modem
+   Backup_Display_Name: modem
+   Storage_Path: /modem
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/recovery | /dev/block/mmcblk0p20 | Size: 16MB
+   Flags: IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p20
+   Display_Name: Recovery
+   Storage_Name: recovery
+   Backup_Path: /recovery
+   Backup_Name: recovery
+   Backup_Display_Name: Recovery
+   Storage_Path: /recovery
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/rpm | /dev/block/mmcblk0p2 | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p2
+   Display_Name: rpm
+   Storage_Name: rpm
+   Backup_Path: /rpm
+   Backup_Name: rpm
+   Backup_Display_Name: rpm
+   Storage_Path: /rpm
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/sbl1 | /dev/block/mmcblk0p1 | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p1
+   Display_Name: sbl1
+   Storage_Name: sbl1
+   Backup_Path: /sbl1
+   Backup_Name: sbl1
+   Backup_Display_Name: sbl1
+   Storage_Path: /sbl1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/system | /dev/block/mmcblk0p23 | Size: 1258MB Used: 711MB Free: 546MB Backup Size: 711MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p23
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/tz | /dev/block/mmcblk0p3 | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p3
+   Display_Name: tz
+   Storage_Name: tz
+   Backup_Path: /tz
+   Backup_Name: tz
+   Backup_Display_Name: tz
+   Storage_Path: /tz
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/usbotg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/platform/xhci-hcd/by-num/p1
+   Display_Name: USB-OTG
+   Storage_Name: USB-OTG
+   Backup_Path: /usbotg
+   Backup_Name: usbotg
+   Backup_Display_Name: USB-OTG
+   Storage_Path: /usbotg
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   MTP_Storage_ID: 65538
+
+I:Loading package: TWRP (/data/media/0/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '/data/media/0/TWRP/BACKUPS/MI_3W'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page reboot
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page trydecrypt
+I:Loading page terminalcommand
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page installsu
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Switching packages (TWRP)
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+Startup Commands: 
+av.offload.enable=true
+mm.enable.qcom_parser=37491
+mm.enable.smoothstreaming=true
+ro.cm.device=cancro
+ro.cm.display.version=12-20160404-UNOFFICIAL-cancro
+ro.cm.version=12-20160404-UNOFFICIAL-cancro
+ro.cm.releasetype=UNOFFICIAL
+ro.fm.transmitter=false
+ro.qc.sdk.izat.service_mask=0x5
+ro.qc.sdk.izat.premium_enabled=1
+ro.qc.sdk.audio.ssr=false
+ro.qc.sdk.audio.fluencetype=fluence
+ro.qc.sdk.camera.facialproc=true
+ro.qc.sdk.sensors.gestures=true
+ro.qc.sdk.gestures.camera=false
+ro.qc.sensors.step_counter=true
+ro.qc.sensors.step_detector=true
+ro.qc.sensors.max_geomag_rotvec=true
+ro.sf.lcd_density=480
+ro.adb.secure=0
+ro.com.google.clientidbase=android-xiaomi
+ro.com.android.dateformat=MM-dd-yyyy
+ro.com.android.dataroaming=false
+ro.com.android.wifi-watchlist=GoogleGuest
+ro.gps.agps_provider=1
+ro.nfc.port=I2C
+ro.qti.sdk.sensors.gestures=true
+ro.qti.sensors.bte=true
+ro.qti.sensors.smd=true
+ro.qti.sensors.vmd=true
+ro.qti.sensors.gtap=true
+ro.qti.sensors.georv=true
+ro.qti.sensors.game_rv=true
+ro.qti.sensors.max_grav=200
+ro.qti.sensors.max_linacc=200
+ro.qti.sensors.max_orient=200
+ro.qti.sensors.max_rotvec=200
+ro.qti.sensors.step_counter=true
+ro.qti.sensors.max_gyro_rate=200
+ro.qti.sensors.step_detector=true
+ro.qti.sensors.max_accel_rate=200
+ro.qti.sensors.max_gamerv_rate=200
+ro.qti.sensors.max_geomag_rotv=60
+ro.qti.sensors.smgr_mag_cal_en=true
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+ro.boot.ftm=0
+ro.boot.emmc=true
+ro.boot.selinux=permissive
+ro.boot.baseband=msm
+ro.boot.hardware=qcom
+ro.boot.serialno=1cd7708
+ro.boot.hwversion=32
+ro.hdmi.enable=true
+ro.hwui.path_cache_size=32
+ro.hwui.layer_cache_size=48
+ro.hwui.texture_cache_size=72
+ro.hwui.gradient_cache_size=1
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_large_cache_height=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.texture_cache_flushrate=0.4
+ro.qcom.ad=1
+ro.qcom.ad.calib.data=/data/calib.cfg
+ro.twrp.boot=1
+ro.twrp.version=3.0.2-0
+ro.wifi.channels=
+ro.allow.mock.location=1
+ro.board.platform=msm8974
+ro.build.id=LRX22G
+ro.build.date=Mon Apr  4 12:09:57 EDT 2016
+ro.build.date.utc=1459786197
+ro.build.host=build
+ro.build.tags=test-keys
+ro.build.type=eng
+ro.build.user=jenkins
+ro.build.display.id=cm_cancro-eng 5.0.2 LRX22G 8a1ffa2e27 test-keys
+ro.build.product=cancro
+ro.build.selinux=1
+ro.build.version.sdk=21
+ro.build.version.release=5.0.2
+ro.build.version.codename=REL
+ro.build.version.incremental=8a1ffa2e27
+ro.build.version.all_codenames=REL
+ro.build.description=cancro-userdebug 5.0 LRX21M 4.12.8 test-keys
+ro.build.fingerprint=Xiaomi/cancro/cancro:5.0/LRX21M/4.12.8:userdebug/test-keys
+ro.build.characteristics=nosdcard
+ro.config.ringtone=Orion.ogg
+ro.config.alarm_alert=Hassium.ogg
+ro.config.notification_sound=Argon.ogg
+ro.dalvik.vm.native.bridge=0
+ro.kernel.android.checkjni=1
+ro.secure=0
+ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
+ro.zygote=zygote32
+ro.carrier=unknown
+ro.cmlegal.url=https://www.cyanogenmod.org/docs/privacy
+ro.product.cpu.abi=armeabi-v7a
+ro.product.cpu.abi2=armeabi
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=
+ro.product.name=cancro
+ro.product.board=MSM8974
+ro.product.brand=Xiaomi
+ro.product.model=MI 3W
+ro.product.device=cancro
+ro.product.locale.region=US
+ro.product.locale.language=en
+ro.product.manufacturer=Xiaomi
+ro.baseband=msm
+ro.bootmode=unknown
+ro.hardware=qcom
+ro.opengles.version=196608
+ro.qualcomm.cabl=0
+ro.qualcomm.sensors.cmc=true
+ro.qualcomm.sensors.pam=true
+ro.qualcomm.sensors.qmd=true
+ro.qualcomm.sensors.smd=true
+ro.qualcomm.sensors.vmd=true
+ro.qualcomm.sensors.gtap=true
+ro.qualcomm.sensors.georv=true
+ro.qualcomm.sensors.game_rv=true
+ro.qualcomm.sensors.pedometer=true
+ro.qualcomm.sensors.scrn_ortn=true
+ro.revision=0
+ro.serialno=1cd7708
+ro.bluetooth.alwaysbleon=true
+ro.bootloader=unknown
+ro.debuggable=1
+ro.modversion=12-20160404-UNOFFICIAL-cancro
+ro.rommanager.developerid=cyanogenmod
+ro.factorytest=0
+ro.setupwizard.enterprise_mode=1
+com.qc.hardware=true
+dev.pm.dyn_samplingrate=1
+mmp.enable.3g2=true
+net.bt.name=Android
+net.change=net.bt.name
+ril.subscription.types=RUIM
+use.voice.path.for.pcm.voip=true
+use.dedicated.device.for.voip=false
+init.svc.adbd=running
+init.svc.healthd=running
+init.svc.ueventd=running
+init.svc.recovery=running
+init.svc.set_permissive=stopped
+qcom.bt.dev_power_class=1
+qcom.hw.aac.encoder=false
+rild.libargs=-d /dev/smd0
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+twrp.crash_counter=0
+twrp.action_complete=0
+vidc.debug.level=7
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
+wlan.driver.ath=0
+audio.offload.pcm.enable=false
+audio.offload.buffer.size.kb=32
+audio.offload.disable=1
+audio.offload.gapless.enabled=false
+debug.sf.hw=1
+debug.egl.hw=1
+debug.mdpcomp.logs=0
+debug.mdpcomp.4k2kSplit=1
+debug.qualcomm.sns.hal=w
+debug.qualcomm.sns.daemon=w
+debug.qualcomm.sns.libsensor1=w
+debug.composition.type=dyn
+media.stagefright.use-awesome=true
+media.aac_51_output_enabled=true
+dalvik.vm.isa.arm.features=div
+dalvik.vm.heapsize=512m
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=2m
+dalvik.vm.dexopt-flags=m=y
+dalvik.vm.heapstartsize=16m
+dalvik.vm.dex2oat-filter=interpret-only
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.image-dex2oat-filter=verify-none
+dalvik.vm.heaptargetutilization=0.75
+tunnel.audio.encode=false
+camera2.portability.force_api=1
+persist.gps.qc_nlp_in_use=0
+persist.hwc.mdpcomp.enable=true
+persist.loc.nlp_name=com.qualcomm.services.location
+persist.omh.enabled=true
+persist.sys.dun.override=0
+persist.sys.ssr.restart_level=3
+persist.sys.usb.config=none
+persist.sys.wfd.virtual=0
+persist.sys.dalvik.vm.lib.2=libart.so
+persist.sys.strictmode.visual=0
+persist.sys.strictmode.disable=1
+persist.sys.root_access=1
+persist.sys.recovery_update=false
+persist.sys.strict_op_enable=false
+persist.usb.hvdcp.detect=true
+persist.demo.hdmirotationlock=false
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.voicecall=true
+persist.audio.init_volume_index=1
+persist.debug.wfd.enable=1
+persist.radio.multisim.config=none
+persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
+persist.timed.enable=true
+persist.speaker.prot.enable=true
+persist.multisim.config=none
+service.adb.root=1
+keyguard.no_require_sim=true
+bluetooth.hfp.client=1
+
+I:Copying file /cache/recovery/log to /cache/recovery/last_log
+tw_get_context got selinux context: u:object_r:media_rw_data_file:s0
+I:Got default contexts and file mode for storage files.
+I:Attempt to load settings from settings file...
+I:InfoManager loading from '/data/media/0/TWRP/.twrps'.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/MI_3W'
+I:Copying file /etc/recovery.fstab to /cache/recovery/recovery.fstab
+I:Version number saved to '/cache/recovery/.version'
+I:Unable to mount '/usbotg'
+I:Actual block device: '', current file system: 'vfat'
+__bionic_open_tzdata: couldn't find any tzdata when looking for TAIST-8!
+__bionic_open_tzdata: couldn't find any tzdata when looking for posixrules!
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/MI_3W'
+I:TWFunc::Fixup_Time: Pre-fix date and time: 2017-12-20--10-30-21
+I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
+I:TWFunc::Fixup_Time: Date and time corrected: 2017-12-20--10-30-21
+I:Enabling MTP during startup
+I:Starting MTP
+Starting MTP
+I:sending message to add 65537 '/data/media/0' 'Internal Storage'
+I:Message sent, add storage ID: 65537
+MTP Enabled
+I:Check_Lifetime_Writes result: '18744'
+I:Switching packages (TWRP)
+I:Skipping screen timeout: TW_NO_SCREEN_TIMEOUT is set
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+created new mtpserver object
+mtppipe add storage 65537 '/data/media/0'
+MtpServer::run fd: 19
+MtpStorage id: 65537 path: /data/media/0
